@@ -1,8 +1,6 @@
 import discord
 from discord.ext import commands
 from pathlib import Path
-import os
-from discord.ext.commands import has_permissions
 
 intents = discord.Intents.default()
 intents.members = True
@@ -30,7 +28,8 @@ if __name__ == '__main__':
 
 	cogs = [
 		'cogs.admin.mod',
-		'cogs.admin.admin_misc'
+		'cogs.admin.admin_misc',
+		'cogs.events.log'
 	]
 
 	for cog in cogs:
